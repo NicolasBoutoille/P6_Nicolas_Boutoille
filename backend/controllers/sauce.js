@@ -17,7 +17,7 @@ exports.getOneSauce = (req, res, next) => {
 
 // Création de sauce
 exports.createSauce = (req, res, next) => {
-    // On récupère l'objet de la requête en le transformant au format JSON
+    // On récupère l'objet de la requête en le transformant en objet JSON
     const sauceObject = JSON.parse(req.body.sauce);
     // On créé ensuite la sauce a partir du model
     const sauce = new Sauce({
